@@ -41,7 +41,6 @@ public class Main {
         WebElement paszport = webDriver.findElement(By.xpath("//*[@id='ctl00_CPH_Content_NPH_TypIdentyfikatoraContainer']/div/div/div/ul/li[3]"));
         paszport.click();
 
-        //Id to czasami ctl00_CPH_Content_NPH_NumerPESEL a czasami ctl00_CPH_Content_NPH_NumerPaszportu, więc łapię po czym innym
         WebElement numerIdentyfikatoraTextField = webDriver.findElement(By.id("ctl00_CPH_Content_NPH_NumerPaszportu"));
         numerIdentyfikatoraTextField.sendKeys("Test123");
 
